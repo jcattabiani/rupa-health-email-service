@@ -1,4 +1,4 @@
-### Rupa Health Transactional Email Service
+# Rupa Health Transactional Email Service
 
 ## How to install and run
 
@@ -11,11 +11,11 @@
 
 ## Technical choices
 
-# Framework
+### Framework
 
 I built this application using Node.js. I was drawn to this option because I'm most comfortable with JavaScript, and because it has a robust ecosystem of packages that I could use to streamline the process. It took very little time to spin up a server and expose an endpoint, and the libraries I used simplified a ton of lower level functionality.
 
-# Libraries
+### Libraries
 
 - Express: Provided a framework for handling HTTP requests, defining routes, and applying middleware for stuff like JSON parsing and data validation
 - Axios: Simplified the process of making HTTP requests and handling responses
