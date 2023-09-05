@@ -6,7 +6,7 @@
 2. Navigate to the project directory and run `npm install` to install the necessary dependencies.
 3. Configurations are stored in the .env file. Enter your Mailgun domain and API key, and your Sendgrid API key.
 4. Set the EMAIL_SERVICE_PROVIDER variable to either mailgun or sendgrid, and run the application with `npm start`.
-5. Once the server is running, you can hit the endpoint http://localhost:{PORT}/email. By default, `PORT` is 3000.
+5. Once the server is running, you can hit the endpoint http://localhost:3000/email. `PORT` is 3000 by default but can be configured.
 6. Run tests with `npm test`. 
 
 ## Technical choices
