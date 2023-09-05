@@ -17,23 +17,23 @@ I built this application using Node.js. I was drawn to this option because I'm m
 
 # Libraries
 
--Express: Provided a framework for handling HTTP requests, defining routes, and applying middleware for stuff like JSON parsing and data validation
--Axios: Simplified the process of making HTTP requests and handling responses
--Dotenv: Separated configurations and sensitive info (like API keys) from the codebase
--HTML-to-text: Easy conversion from HTML to plaintext while preserving a semblance of structure
--JOI: Made validating incoming HTTP requests and handling those errors painless
--Mocha: Provided structure for testing
--Chai/Chai-http: Used with mocha for testing assertions
+- Express: Provided a framework for handling HTTP requests, defining routes, and applying middleware for stuff like JSON parsing and data validation
+- Axios: Simplified the process of making HTTP requests and handling responses
+- Dotenv: Separated configurations and sensitive info (like API keys) from the codebase
+- HTML-to-text: Easy conversion from HTML to plaintext while preserving a semblance of structure
+- JOI: Made validating incoming HTTP requests and handling those errors painless
+- Mocha: Provided structure for testing
+- Chai/Chai-http: Used with mocha for testing assertions
 
 ## Tradeoffs/Limitations
 
 If I had more time, there are a few improvements I'd like to make:
--Better error handling from the email APIs - Right now, it just throws a 500 with 'Internal server error' if anything goes wrong.
--Custom validation messages - I just went with the JOI defaults, but I don't love "x is not allowed to be empty".
--Flesh out tests - I only included basic pass/fail validation tests, but it should really make sure every field validates correctly. Also, the "pass" test probably shouldn't hit an external API. 
--Allow multiple "to" and "to_name" fields - Both email APIs support sending emails to multiple recipients, but this interface does not. This is probably the biggest weakness.
--Better HTML to plain text - I do like how the html-to-text library preserves line breaks between html tags, but I'm not crazy about how it capitalizes headers. I could also convert to Markdown instead.
--Make it easier to add new email providers - Right now, if we wanted to add a third email provider, we'd have to make a change to the .env file, emailService, and validationService. The .env change is inevitable but it would be nice to be able to change the code in only one other place. 
+- Better error handling from the email APIs - Right now, it just throws a 500 with 'Internal server error' if anything goes wrong.
+- Custom validation messages - I just went with the JOI defaults, but I don't love "x is not allowed to be empty".
+- Flesh out tests - I only included basic pass/fail validation tests, but it should really make sure every field validates correctly. Also, the "pass" test probably shouldn't hit an external API. 
+- Allow multiple "to" and "to_name" fields - Both email APIs support sending emails to multiple recipients, but this interface does not. This is probably the biggest weakness.
+- Better HTML to plain text - I do like how the html-to-text library preserves line breaks between html tags, but I'm not crazy about how it capitalizes headers. I could also convert to Markdown instead.
+- Make it easier to add new email providers - Right now, if we wanted to add a third email provider, we'd have to make a change to the .env file, emailService, and validationService. The .env change is inevitable but it would be nice to be able to change the code in only one other place. 
 
 ## Time spent
 
